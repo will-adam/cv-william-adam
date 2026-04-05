@@ -1,0 +1,10 @@
+.private-info {
+    display: block;
+    text-align: right;
+}
+
+.private-info a {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+}

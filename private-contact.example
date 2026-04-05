@@ -1,0 +1,3 @@
+# Copy this file to private-contact.local and fill with contact values.
+PRIVATE_EMAIL=your.email@example.com
+PRIVATE_PHONE=+1 000 000 0000
