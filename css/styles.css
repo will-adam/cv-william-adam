@@ -104,7 +104,7 @@ body {
     transition: color 0.25s;
 }
 
-.hero-contact a:not(.linkedin-link)::after {
+.hero-contact a::after {
     content: "";
     position: absolute;
     left: 0;

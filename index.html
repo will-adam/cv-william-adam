@@ -31,6 +31,7 @@
                         <path
                             d="M20.45 20.45h-3.554v-5.57c0-1.328-.024-3.037-1.85-3.037-1.854 0-2.137 1.447-2.137 2.942v5.665H9.356V9h3.413v1.561h.047c.475-.9 1.635-1.85 3.365-1.85 3.6 0 4.267 2.37 4.267 5.455v6.284zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM6.87 20.45H3.803V9H6.87v11.45zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.205 24 24 23.226 24 22.271V1.729C24 .774 23.205 0 22.222 0h.003z" />
                     </svg>
+                    will-adm
                 </a>
             </div>
         </header>
@@ -84,16 +85,7 @@
                             <span class="tag">ESP32</span>
                             <span class="tag">Raspberry Pi (Linux)</span>
                             <span class="tag">Arduino</span>
-                            <span class="tag">FreeRTOS</span>
                             <span class="tag">ARM Cortex-M</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-group">
-                        <p class="skill-group-title">FPGA &amp; HDL</p>
-                        <div class="skill-tags">
-                            <span class="tag">Xilinx Vivado</span>
-                            <span class="tag">HLS</span>
                         </div>
                     </div>
 
@@ -109,6 +101,7 @@
                             <span class="tag">Doxygen</span>
                             <span class="tag">Confluence</span>
                             <span class="tag">Jira</span>
+                            <span class="tag">Cursor</span>
                             <span class="tag">VS Code</span>
                             <span class="tag">Visual Studio</span>
                             <span class="tag">CLion</span>
@@ -229,26 +222,26 @@
                             <p class="timeline-role">Concepteur logiciel</p>
                             <div class="timeline-body">
                                 <ul>
-                                    <li>Développement d'applications de tests pour
-                                        systèmes de télécommunications en C++ et C#.</li>
-                                    <li>Développement de couches d'abstraction logicielle (HAL) sous Linux
-                                        pour piloter des composants FPGA dédiés au traitement de signal optique.
-                                    </li>
-                                    <li>Diagnostic et correction de bogues dans des bases de code
-                                        legacy à grande échelle.</li>
-                                    <li>Refactorisation de code existant et implémentation de tests
-                                        unitaires.</li>
-                                    <li>Travail en mode Agile/Scrum (stand-ups, sprint planning, rétrospectives).
-                                    </li>
-                                    <li>Formation C# en cours à l'interne.</li>
+                                    <li>Développement de bout en bout (hors GUI) d'applications de test
+                                        pour instruments de télécommunications en C++ et C#.</li>
+                                    <li>Ajout du support logiciel pour de nouveaux connecteurs optiques (SFP, QSFP et OSFP).</li>
+                                    <li>Développement et maintenance de pilotes Linux et de couches HAL
+                                        pour interfacer des composants FPGA dédiés au traitement de
+                                        signal optique.</li>
+                                    <li>Diagnostic et résolution de problèmes d'intégration, notamment
+                                        le débogage de connecteurs optiques.</li>
+                                    <li>Correction de bogues et refactorisation de code dans
+                                        des bases de code C++ et C# à grande échelle, avec
+                                        implémentation de tests unitaires.</li>
+                                    <li>Utilisation quotidienne de l'outil IA de développement Cursor.</li>
                                 </ul>
                             </div>
                             <div class="timeline-tech">
                                 <span class="tag">C++</span>
                                 <span class="tag">C#</span>
                                 <span class="tag">Linux</span>
-                                <span class="tag">HAL</span>
-                                <span class="tag">FPGA</span>
+                                <span class="tag">I²C</span>
+                                <span class="tag">HAL / FPGA</span>
                                 <span class="tag">Tests unitaires</span>
                                 <span class="tag">Télécommunications</span>
                                 <span class="tag">Débogage</span>
@@ -317,10 +310,9 @@
 
                         <div class="project-card">
                             <p class="project-title">Surveillance de disjoncteur industriel</p>
-                            <p class="project-desc">Collaboration en équipe de 8 étudiants avec un partenaire
-                                industriel. Diagnostic thermique sur Raspberry Pi 5
-                                (Python, OpenCV) avec détection d'anomalies. Conception d'un PCB pour caméra
-                                thermique communiquant par I²C avec un ESP32.</p>
+                            <p class="project-desc">Diagnostic thermique et détection d'anomalies sur
+                                Raspberry Pi (OpenCV), avec conception d'un PCB caméra thermique /
+                                ESP32. Projet en équipe avec un partenaire industriel.</p>
                             <div class="project-tech">
                                 <span class="tag">Raspberry Pi 5</span>
                                 <span class="tag">Python</span>
@@ -335,10 +327,8 @@
                         <div class="project-card">
                             <p class="project-title">Contrôle moteurs BLDC par rétroaction BEMF
                             </p>
-                            <p class="project-desc">Conception d'un PCB intégrant un STM32
-                                contrôlant trois half-bridges (6 transistors) avec rétroaction sensorless par BEMF.
-                                Algorithme de commutation en temps réel synchronisé sur les passages par zéro des
-                                tensions BEMF.</p>
+                            <p class="project-desc">PCB STM32 pour la commande sensorless de moteurs
+                                BLDC, commutation temps réel par BEMF.</p>
                             <div class="project-tech">
                                 <span class="tag">STM32</span>
                                 <span class="tag">C</span>
@@ -350,10 +340,9 @@
 
                         <div class="project-card" style="grid-column: 1 / -1;">
                             <p class="project-title">Haut-parleur réactif à la musique</p>
-                            <p class="project-desc">Haut-parleur filaire avec effets lumineux
-                                synchronisés, basé sur un STM32 sur PCB avec amplificateur audio et interface web de
-                                contrôle (HTML, CSS, JavaScript). Version 2 pour les portes ouvertes de l'École :
-                                connectivité Bluetooth intégrée via un ESP32.</p>
+                            <p class="project-desc">PCB STM32 avec circuit d'amplification, éclairage
+                                synchronisé à la musique et interface web ; version Bluetooth via
+                                ESP32.</p>
                             <div class="project-tech">
                                 <span class="tag">Traitement de signal</span>
                                 <span class="tag">FFT</span>
