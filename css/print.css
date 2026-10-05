@@ -46,12 +46,22 @@ body {
     margin: 0;
     background: white;
     overflow: visible;
+    width: 7.7in;
+    max-width: 7.7in;
 }
 
-.sidebar {
-    background: white;
-    border: none;
-    outline: none;
+.hero {
+    break-after: avoid;
+    page-break-after: avoid;
+}
+
+.layout,
+.sidebar,
+.main,
+.section,
+.sidebar-section {
+    break-inside: auto;
+    page-break-inside: auto;
 }
 
 .tag,
@@ -105,12 +115,23 @@ body {
 }
 
 .layout {
+    display: grid;
     grid-template-columns: 222px 1fr;
+    align-items: stretch;
+}
+
+.sidebar,
+.main {
+    --text-scale: 1;
+    font-size: calc(12px * var(--text-scale, 1));
 }
 
 .sidebar {
     padding: 12px 14px 12px 0;
+    background: white;
+    outline: none;
     border: none;
+    border-right: 1px solid var(--border);
 }
 
 .main {
@@ -121,14 +142,19 @@ body {
     margin-bottom: 10px;
 }
 
+.sidebar-section:last-child,
+.section:last-child {
+    margin-bottom: 0;
+}
+
 .section-label {
     margin-bottom: 6px;
     padding-bottom: 3px;
-    font-size: 10px;
+    font-size: 0.833em;
 }
 
 .profile-text {
-    font-size: 9.5px;
+    font-size: 0.792em;
     line-height: 1.45;
 }
 
@@ -137,7 +163,7 @@ body {
 }
 
 .skill-group-title {
-    font-size: 10px;
+    font-size: 0.833em;
     margin-bottom: 2px;
 }
 
@@ -146,34 +172,34 @@ body {
 }
 
 .tag {
-    font-size: 8px;
+    font-size: 0.667em;
     padding: 0.5px 4px;
     border-radius: 1px;
 }
 
 .aptitude-item {
-    font-size: 10px;
+    font-size: 0.833em;
     padding: 2px 0;
     line-height: 1.35;
 }
 
 .sidebar .engagement-item .timeline-company {
-    font-size: 10px;
+    font-size: 0.833em;
 }
 
 .sidebar .engagement-item .timeline-role {
-    font-size: 9px;
+    font-size: 0.75em;
     margin-bottom: 4px;
 }
 
 .sidebar .engagement-item .timeline-body li {
-    font-size: 9px;
+    font-size: 0.75em;
     line-height: 1.35;
     padding: 1px 0 1px 10px;
 }
 
 .sidebar .engagement-item .timeline-period {
-    font-size: 8px;
+    font-size: 0.667em;
 }
 
 .sidebar .engagement-item .timeline-tech {
@@ -182,12 +208,12 @@ body {
 
 .lang-item {
     padding: 2.5px 0;
-    font-size: 10px;
+    font-size: 0.833em;
     border-bottom: none;
 }
 
 .lang-level {
-    font-size: 10px;
+    font-size: 0.833em;
 }
 
 .section {
@@ -200,20 +226,20 @@ body {
 }
 
 .edu-degree {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .edu-dates {
-    font-size: 10px;
+    font-size: 0.833em;
 }
 
 .edu-school {
-    font-size: 10px;
+    font-size: 0.833em;
     margin-bottom: 2px;
 }
 
 .edu-desc {
-    font-size: 9.5px;
+    font-size: 0.792em;
     line-height: 1.42;
     margin-bottom: 4px;
 }
@@ -269,27 +295,27 @@ body {
 }
 
 .timeline-company {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 .timeline-period {
-    font-size: 10px;
+    font-size: 0.833em;
 }
 
 .timeline-role {
-    font-size: 10px;
+    font-size: 0.833em;
     margin-bottom: 2px;
 }
 
 .timeline-body li {
-    font-size: 9.5px;
+    font-size: 0.792em;
     line-height: 1.42;
     padding: 0.5px 0 0.5px 10px;
 }
 
 .timeline-body li::before {
     content: "\2013";
-    font-size: 9.5px;
+    font-size: 0.792em;
     top: 1px;
     line-height: 1.42;
 }
@@ -313,12 +339,12 @@ a:not([class]) {
 }
 
 .project-title {
-    font-size: 10px;
+    font-size: 0.833em;
     margin-bottom: 2px;
 }
 
 .project-desc {
-    font-size: 9.5px;
+    font-size: 0.792em;
     line-height: 1.38;
     margin-bottom: 4px;
 }
