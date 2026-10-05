@@ -325,6 +325,29 @@ body {
 
 .engagement-item .timeline-meta {
     margin-bottom: 2px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.sidebar .engagement-item .timeline-company {
+    font-size: 14px;
+    letter-spacing: -0.2px;
+}
+
+.sidebar .engagement-item .timeline-role {
+    font-size: 11.5px;
+    margin-bottom: 8px;
+}
+
+.sidebar .engagement-item .timeline-body li {
+    font-size: 12px;
+    line-height: 1.55;
+    padding: 2px 0 2px 12px;
+}
+
+.sidebar .engagement-item .timeline-tech {
+    margin-top: 8px;
 }
 
 .timeline {

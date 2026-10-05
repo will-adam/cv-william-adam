@@ -141,51 +141,6 @@
                 </div>
 
                 <div class="sidebar-section">
-                    <p class="section-label">Aptitudes</p>
-                    <p class="aptitude-item">Collaboration en équipe multidisciplinaire</p>
-                    <p class="aptitude-item">Analyse et résolution de problèmes complexes</p>
-                    <p class="aptitude-item">Rigueur technique et souci du détail</p>
-                    <p class="aptitude-item">Autonomie et apprentissage rapide</p>
-                    <p class="aptitude-item">Curiosité et volonté d'apprendre</p>
-                    <p class="aptitude-item">Rédaction technique et vulgarisation</p>
-                </div>
-
-                <div class="sidebar-section">
-                    <p class="section-label">Langues</p>
-                    <div class="lang-item">
-                        <span>Français</span>
-                        <span class="lang-level">Maternelle</span>
-                    </div>
-                    <div class="lang-item">
-                        <span>Anglais</span>
-                        <span class="lang-level">Avancé</span>
-                    </div>
-                </div>
-
-            </aside>
-
-            <main class="main">
-
-                <div class="section">
-                    <p class="section-label">Formation</p>
-                    <div class="edu-item">
-                        <div class="edu-header">
-                            <p class="edu-degree">B.Ing. Génie électrique</p>
-                            <span class="edu-dates">2021 – 2025</span>
-                        </div>
-                        <p class="edu-school">Polytechnique Montréal</p>
-                        <p class="edu-desc">Spécialisation en informatique et électronique. Moyenne
-                            cumulative de 3,88/4,0.</p>
-                        <div class="skill-tags">
-                            <span class="tag">Architecture ordinateur</span>
-                            <span class="tag">Systèmes embarqués</span>
-                            <span class="tag">Traitement du signal</span>
-                            <span class="tag">Systèmes de contrôle</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="section">
                     <p class="section-label">Engagement académique</p>
                     <div class="engagement-item">
                         <div class="timeline-meta">
@@ -209,6 +164,22 @@
                     </div>
                 </div>
 
+                <div class="sidebar-section">
+                    <p class="section-label">Langues</p>
+                    <div class="lang-item">
+                        <span>Français</span>
+                        <span class="lang-level">Maternelle</span>
+                    </div>
+                    <div class="lang-item">
+                        <span>Anglais</span>
+                        <span class="lang-level">Avancé</span>
+                    </div>
+                </div>
+
+            </aside>
+
+            <main class="main">
+
                 <div class="section">
                     <p class="section-label">Expérience de travail</p>
                     <div class="timeline">
@@ -224,10 +195,11 @@
                                 <ul>
                                     <li>Développement de bout en bout (hors GUI) d'applications de test
                                         pour instruments de télécommunications en C++ et C#.</li>
-                                    <li>Ajout du support logiciel pour de nouveaux connecteurs optiques (SFP, QSFP et OSFP).</li>
-                                    <li>Développement et maintenance de pilotes Linux et de couches HAL
+                                    <li>Développement et maintenance de pilotes Linux et de HAL
                                         pour interfacer des composants FPGA dédiés au traitement de
                                         signal optique.</li>
+                                    <li>Ajout du support logiciel pour de nouveaux connecteurs optiques (SFP, QSFP et OSFP), 
+                                        lecture de datasheets et application des standards (SFF, CMIS).</li>
                                     <li>Diagnostic et résolution de problèmes d'intégration, notamment
                                         le débogage de connecteurs optiques.</li>
                                     <li>Correction de bogues et refactorisation de code dans
@@ -240,11 +212,13 @@
                                 <span class="tag">C++</span>
                                 <span class="tag">C#</span>
                                 <span class="tag">Linux</span>
-                                <span class="tag">I²C</span>
-                                <span class="tag">HAL / FPGA</span>
+                                <span class="tag">HAL</span>
+                                <span class="tag">FPGA</span>
                                 <span class="tag">Tests unitaires</span>
                                 <span class="tag">Télécommunications</span>
+                                <span class="tag">SFF / CMIS</span>
                                 <span class="tag">Débogage</span>
+                                <span class="tag">Intégration</span>
                                 <span class="tag">Agile/Scrum</span>
                             </div>
                         </div>
@@ -305,14 +279,34 @@
                 </div>
 
                 <div class="section">
+                    <p class="section-label">Formation</p>
+                    <div class="edu-item">
+                        <div class="edu-header">
+                            <p class="edu-degree">B.Ing. Génie électrique</p>
+                            <span class="edu-dates">2021 – 2025</span>
+                        </div>
+                        <p class="edu-school">Polytechnique Montréal</p>
+                        <p class="edu-desc">Spécialisation en informatique et électronique. Moyenne
+                            cumulative de 3,88/4,0.</p>
+                        <div class="skill-tags">
+                            <span class="tag">Architecture ordinateur</span>
+                            <span class="tag">Systèmes embarqués</span>
+                            <span class="tag">Traitement du signal</span>
+                            <span class="tag">Systèmes de contrôle numérique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
                     <p class="section-label">Projets notables</p>
                     <div class="project-grid">
 
                         <div class="project-card">
                             <p class="project-title">Surveillance de disjoncteur industriel</p>
-                            <p class="project-desc">Diagnostic thermique et détection d'anomalies sur
-                                Raspberry Pi (OpenCV), avec conception d'un PCB caméra thermique /
-                                ESP32. Projet en équipe avec un partenaire industriel.</p>
+                            <p class="project-desc">Circuit imprimé sur mesure (caméra thermique I²C et ESP32)
+                                qui acquiert l'image thermique d'un disjoncteur industriel. Sur Raspberry Pi 5,
+                                OpenCV localise les points chauds et signale une anomalie pour surveiller l'état du disjoncteur. Projet d'équipe
+                                avec un partenaire industriel.</p>
                             <div class="project-tech">
                                 <span class="tag">Raspberry Pi 5</span>
                                 <span class="tag">Python</span>
@@ -327,8 +321,9 @@
                         <div class="project-card">
                             <p class="project-title">Contrôle moteurs BLDC par rétroaction BEMF
                             </p>
-                            <p class="project-desc">PCB STM32 pour la commande sensorless de moteurs
-                                BLDC, commutation temps réel par BEMF.</p>
+                            <p class="project-desc">Firmware en C sur STM32 et circuit imprimé sur mesure pour un moteur
+                                BLDC sans capteur de position : la commutation des phases est déclenchée en
+                                temps réel par les passages par zéro de la force contre-électromotrice (BEMF).</p>
                             <div class="project-tech">
                                 <span class="tag">STM32</span>
                                 <span class="tag">C</span>
@@ -340,9 +335,10 @@
 
                         <div class="project-card" style="grid-column: 1 / -1;">
                             <p class="project-title">Haut-parleur réactif à la musique</p>
-                            <p class="project-desc">PCB STM32 avec circuit d'amplification, éclairage
-                                synchronisé à la musique et interface web ; version Bluetooth via
-                                ESP32.</p>
+                            <p class="project-desc">Circuit imprimé STM32 avec étage d'amplification : le firmware échantillonne
+                                l'audio, calcule une FFT pour en tirer les bandes de fréquence, puis pilote
+                                un éclairage d'effets lumineux synchronisés. Une interface web permet de contrôler les effets ; 2e version pour les portes ouvertes de l'École avec
+                                ESP32 remplaçant le lien audio filaire par Bluetooth avec A2DP.</p>
                             <div class="project-tech">
                                 <span class="tag">Traitement de signal</span>
                                 <span class="tag">FFT</span>
